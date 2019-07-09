@@ -9,10 +9,11 @@ class Train{
     }
 
     display(){
-        if(this.t < 100){
+        if(this.t < 300){
             noStroke();
             fill("#f00");
-            rect(100 + this.speed * this.t, 100, 100);
+            rect(100 + this.speed * this.t, 100, 100, 100);
+            this.t++;
         }
     }
 }
@@ -20,7 +21,7 @@ class Train{
 let train;
 function setup(){
     createCanvas(windowWidth, windowHeight);
-    train = new Train(1);
+    train = new Train(5);
 }
 
 function draw(){
