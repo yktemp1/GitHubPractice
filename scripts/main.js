@@ -20,10 +20,10 @@ class Train{
 let train;
 function setup(){
     createCanvas(windowWidth, windowHeight);
-    train = new Train(100);
+    train = new Train(1);
 }
 
 function draw(){
     background("#333");
-    TransitionEvent.display();
+    train.display();
 }
